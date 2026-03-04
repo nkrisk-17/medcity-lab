@@ -1,8 +1,12 @@
 {
   "routes": [
     {
+      "src": "/",
+      "dest": "/frontend/index.html"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/server.js"
+      "dest": "/frontend/$1"
     }
   ]
 }
