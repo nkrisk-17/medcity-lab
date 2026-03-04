@@ -3538,7 +3538,7 @@
             await showWhatsAppOptions(message);
 
             showToast(
-              "Booking saved to MongoDB! Redirecting to dashboard...",
+              "Booking saved! Redirecting to dashboard...",
               "success",
             );
 
@@ -4180,7 +4180,7 @@
             const data = await response.json();
 
             if (response.ok) {
-              showToast("Report uploaded to MongoDB successfully!", "success");
+              showToast("Report uploaded successfully!", "success");
               document.getElementById("report-upload-form").reset();
               document
                 .getElementById("upload-report-form")
