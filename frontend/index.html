@@ -2902,7 +2902,7 @@
       let config = { ...defaultConfig };
 
       // API Configuration
-      const API_BASE_URL = "http://localhost:5001/api";
+      const API_BASE_URL = "https://medcity-lab-1.onrender.com/api";
 
       // State Management
       let currentUser = null;
@@ -3264,11 +3264,11 @@
             errorDiv.classList.remove("hidden");
           }
         } catch (error) {
-          console.error("Login error:", error);
-          errorDiv.textContent =
-            "Connection error. Please check if the server is running on port 5001.";
-          errorDiv.classList.remove("hidden");
-        }
+  console.error("Login error:", error);
+  errorDiv.textContent =
+    "Connection error. Please check your internet connection or try again later.";
+  errorDiv.classList.remove("hidden");
+}
 
         btn.disabled = false;
         btn.textContent = "Sign In";
@@ -3318,7 +3318,7 @@
         } catch (error) {
           console.error("Signup error:", error);
           errorDiv.textContent =
-            "Connection error. Please check if the server is running on port 5001.";
+            "Connection error. Please check your internet connection or try again later.";
           errorDiv.classList.remove("hidden");
         }
 
@@ -3556,7 +3556,7 @@
         } catch (error) {
           console.error("Booking error:", error);
           errorDiv.textContent =
-            "Connection error. Please check if the server is running on port 5001.";
+           "Connection error. Please check your internet connection or try again later.";
           errorDiv.classList.remove("hidden");
         }
 
@@ -3904,7 +3904,7 @@
         } catch (error) {
           console.error("Error loading admin dashboard:", error);
           showToast(
-            "Error loading dashboard data. Ensure server is running on port 5001.",
+            "Connection error. Please check your internet connection or try again later.";
             "error",
           );
         }
@@ -4195,7 +4195,7 @@
           } catch (error) {
             console.error("Report upload error:", error);
             showToast(
-              "Connection error. Please check if the server is running on port 5001.",
+              "Connection error. Please check your internet connection or try again later.",
               "error",
             );
           }
